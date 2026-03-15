@@ -1,11 +1,8 @@
-variable "region" {
-  default = "us-east-1"
+variable "instance_type" {
+  default = "t3.micro"
 }
 
-variable "cluster_name" {
-  default = "demo-eks-cluster"
-}
-
-variable "node_instance_type" {
-  default = "t3.medium"
+variable "ami_id" {
+  description = "Amazon Linux 2 AMI"
+  default     = "ami-02dfbd4ff395f2a1b"
 }
